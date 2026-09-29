@@ -31,7 +31,7 @@ class ProdukDiskon extends Produk {
     }
 }
 
-// Fitur 1: Subclass baru ProdukPajak untuk menghitung harga setelah ditambah pajak (misal PPN)
+
 class ProdukPajak extends Produk {
     public function __construct(string $nama, float $harga, private float $pajak){
         parent::__construct($nama, $harga);
@@ -45,11 +45,10 @@ class ProdukPajak extends Produk {
 $daftar = [
     new Produk('keyboard', 250000),
     new ProdukDiskon('mouse', 150000, 10),
-    new ProdukPajak('monitor', 1500000, 11) // Menambahkan objek dengan pajak 11%
+    new ProdukPajak('monitor', 1500000, 11) 
 ];
 
 foreach ($daftar as $produk){
-    // Fitur 2: Penambahan pemisah (' - ') pada output agar nama produk dan harga tidak menempel
     echo $produk->getNama() . ' - Rp' . number_format($produk->hargaAkhir(), 0, ',', '.') . "<br>";
 }
 
