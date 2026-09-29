@@ -8,7 +8,6 @@ Repository ini digunakan untuk menyimpan tugas dan praktikum mata kuliah Pemrogr
 * Program Studi : Teknik Informatika
 * Mata Kuliah : Prak Pemrograman Berbasis Web - B
 ---
-# Pertemuan 1
 
 ## Tugas 1
 
