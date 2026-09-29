@@ -26,11 +26,13 @@ Pada Pertemuan 2, tugas yang dikerjakan meliputi:
 
 ---
 # Screenshot Sebelum Modifikasi
-![alt text](image1.png)
+<img width="457" height="117" alt="image" src="https://github.com/user-attachments/assets/f0dcbb5d-5aac-432f-8c34-7459ff5af2a7" />
+
 
 ---
 # Screenshot Sesudah Modifikasi
-![alt text](image2.png)
+<img width="811" height="140" alt="image2" src="https://github.com/user-attachments/assets/344c8822-4a33-41ed-959b-06b4409246d6" />
+
 
 ---
 
@@ -46,20 +48,22 @@ Pada Pertemuan 2, tugas yang dikerjakan meliputi:
 
 ### Pada Contoh 1 :
 1. **`interface Identitas`**: Sebuah kontrak yang mewajibkan kelas yang mengimplementasikannya (seperti kelas `Mahasiswa`) untuk mendefinisikan dan memiliki metode `ringkasan()`.
-2. **`private string $npm;`**: Penerapan prinsip *Encapsulation* (pembungkusan data). Properti dengan *modifier private* hanya bisa diakses dan diubah dari dalam kelas itu sendiri.
+2. **`private string $npm;`**: Penerapan Encapsulation. Properti dengan *modifier private* hanya bisa diakses dan diubah dari dalam kelas itu sendiri.
 3. **`throw new InvalidArgumentException(...)`**: Sistem penanganan validasi yang akan melempar *exception* (error terstruktur) jika nilai IPK yang diinputkan kurang dari 0 atau lebih dari 4.
 
 ---
 
-## Contoh 2 (Inheritance & Constructor Promotion)
+## Contoh 2 
 
 ---
 # Screenshot Sebelum Modifikasi
-![alt text](image4.png)
+<img width="327" height="157" alt="image4" src="https://github.com/user-attachments/assets/fe653323-8616-42c4-90ec-8199daec429d" />
+
 
 ---
 # Screenshot Sesudah Modifikasi
-![alt text](image5.png)
+<img width="290" height="155" alt="image5" src="https://github.com/user-attachments/assets/c7243653-c99d-45ab-8156-c3cc7f973fa5" />
+
 
 ---
 
@@ -78,9 +82,10 @@ Pada Pertemuan 2, tugas yang dikerjakan meliputi:
 
 ---
 
-## Laporan Error (Troubleshooting)
+## Laporan Error 
 
-**Error pada Contoh 2 (Syntax Error Perhitungan Diskon)**
-![alt text](image3.png)
+**Error pada Contoh 2 Syntax Error Perhitungan Diskon**
+<img width="1267" height="82" alt="image3" src="https://github.com/user-attachments/assets/1f18f465-f269-475e-9fa3-66d9d32d9eab" />
+
 * **Penyebab**: Terdapat kesalahan penulisan (*typo* dan *line break* tidak valid) pada rumus perhitungan diskon di kelas `ProdukDiskon`: `return $this-> *(1 $this->diskon / 100);`. Properti harga tidak dipanggil setelah `$this->` dan operator pengurangannya hilang.
 * **Langkah Perbaikan**: Melengkapi sintaks tersebut dengan benar: `return $this->harga * (1 - ($this->diskon / 100));`.
